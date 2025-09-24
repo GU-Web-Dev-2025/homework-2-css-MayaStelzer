@@ -5,6 +5,15 @@ HW 2
 9/24/25
 */
 
+/* EXTRA CREDIT custom font */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', Georgia, serif;
+}
+
 #container {
     display: flex;
 }
@@ -33,7 +42,8 @@ nav {
     align-items: center;
     gap: 20px;
     padding: 10px 20px;
-    background-color: #9CB380;
+    /* EXTRA CREDIT special effect */
+    background: linear-gradient(to bottom, #4D7C8A 20%, #9CB380 100%);
     border-bottom: 1px solid black
 }
 
@@ -78,14 +88,23 @@ caption {
     margin-bottom: 0.5em;
 }
 
-th, td {
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.styled-table th, .styled-table td {
     border: 1px solid #999;
     padding: 10px;
     text-align: left;
 }
 
-th {
-    background-color: #6B8E23; /* darker green for header */
+.styled-table th {
+    background-color: #6B8E23;
     color: white;
 }
 
@@ -108,6 +127,7 @@ table > ul {
 .polaroid {
     width: 120px;
     background-color: white;
+    /* EXTRA CREDIT special effect */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
     text-align: center;
     padding-bottom: 10px;
