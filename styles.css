@@ -1,0 +1,133 @@
+/* 
+Maya Stelzer
+CPSC 332
+HW 2
+9/24/25
+*/
+
+#container {
+    display: flex;
+}
+
+#about {
+    flex: 0 1 30%;
+    border-right: 1px solid black;
+    padding: 15px;
+}
+
+#about > ul {
+    list-style-type: square;
+}
+
+#main {
+    flex: 0 1 70%;
+    padding: 30px;
+}
+
+h2 {
+    color: #94A89A
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    background-color: #9CB380;
+    border-bottom: 1px solid black
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: color 0.2s, background-color 0.2s;
+}
+nav a:hover {
+    color: #9CB380;
+    background-color: #fff;
+    border-radius: 5px;        
+}
+
+nav #home-link {
+    width: 100px;
+    height: 100px; 
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+#profile-image {
+    width: 200px;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+#work-experience table {
+    tr:nth-child(even) {background-color: #f2f2f2;};
+    width: 100%;
+}
+caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #6B8E23; /* darker green for header */
+    color: white;
+}
+
+table > ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+#education {
+    tr:nth-child(even) {background-color: #f2f2f2;}
+}
+
+.polaroid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; 
+}
+
+.polaroid {
+    width: 120px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+    text-align: center;
+    padding-bottom: 10px;
+    border: 1px solid #ccc;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.polaroid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.polaroid h3 {
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}
+
+.polaroid:hover {
+    transform: scale(1.05) rotate(-2deg);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3), 0 12px 24px rgba(0,0,0,0.25);
+}

@@ -1,4 +1,4 @@
-<!-- Maya Stelzer, CPSC 332, Homework 1, Last Modified: 2025-09-6 -->
+<!-- Maya Stelzer, CPSC 332, Homework 2, Last Modified: 9/24/25 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,36 +6,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction</title>
     <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Introduction Page</h1>
+    <header>
+        <nav>
+            <img src="logo.png" alt="Maya Stelzer logo" id="home-link">
+            <a href="#about">Introduction</a>
+            <a href="#work-experience">Career Summary</a>
+            <a href="#education">Education and Qualifications</a>
+            <a href="#hobbies">Interests and Hobbies</a>
+        </nav>
+    </header>
+    <div id="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Maya Stelzer, Computer Science Student</p>
+            <img src="profile.jpg" alt="Profile Image" id="profile-image">
+            <p>Hi, I'm Maya Stelzer, a senior at Gonzaga University studying Computer Science. I'm a passionate software engineer interested in building software that solves real-world problems, especially projects related to the outdoors and the environment. With a strong foundation in Java, C#, Python, C++, and SQL, I enjoy making practical, impactful, creative solutions that blend technology with the natural world.</p>
+            <h2>Core Skills</h2>
+            <ul>
+                <li>Data Structures and Algorithms</li>
+                <li>Software Development</li>
+                <li>Database Management</li>
+                <li>Java</li>
+                <li>C#</li>
+                <li>Python</li>
+                <li>C++</li>
+                <li>SQL</li>
+            </ul>
+        </section>
+        <div id="main">
+            <section id="work-experience">
+                <h2>Work Experience</h2>
+                <table border="1">
+                    <caption>Professional Roles</caption>
+                    <tr>
+                        <th>Role</th>
+                        <th>Company</th>
+                        <th>Duration</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Implementation Consulting Intern</td>
+                        <td>Fast Enterprises</td>
+                        <td>June 2025 - August 2025</td>
+                        <td>
+                            <ul>
+                                <li>Built and deployed C# solutions for client specific features for enterprise unemployment insurance and paid leave systems</li>
+                                <li>Conducted QA testing to validate new functionality and meet client requirements</li>
+                                <li>Contributed to iterative development in a fast-paced, client facing environment</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Teaching Assistant for Data Structures and Algorithms</td>
+                        <td>Gonzaga University</td>
+                        <td>Aug 2024 - Present</td>
+                        <td>
+                            <ul>
+                                <li>Graded assignments and exams with detailed feedback, supporting 50+ students' learning outcomes</li>
+                                <li>Maintained clear and consistent communication between students and faculty</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section id="education">
+                <h2>Education and Qualifications</h2>
+                <table border="1">
+                    <caption>Education</caption>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Bachelor of Science in Computer Science</td>
+                        <td>Gonzaga University</td>
+                        <td>2022 - Present</td>
+                        <td>Expected Graduation: 2026, minor in Applied Mathematics, vice-president of GU Club Climbing</td>
+                    </tr>
+                    <tr>
+                        <td>High School Diploma</td>
+                        <td>Acalanes High School</td>
+                        <td>2018 - 2022</td>
+                        <td>Scored a 5 on AP Calculus BC and a 4 on AP Computer Science A</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="work-experience">
+                <table border="1">
+                    <caption>Work Experience</caption>
+                    <tr>
+                        <th>Role</th>
+                        <th>Company</th>
+                        <th>Duration</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Implementation Consulting Intern</td>
+                        <td>Fast Enterprises</td>
+                        <td>June 2025 - August 2025</td>
+                        <td><ul>
+                            <li>Build and deployed C# solutions for client specific features for enterprise unemployment insurance and paid leave systems</li>
+                            <li>Conducted QA testing to validate new functionality and meet client requirements</li>
+                            <li>Contributed to iterative development in a fast-paced, client facing environment</li>
+                        </ul></td>
+                    </tr>
+                </table>
+            </section>
+            <section id="hobbies">
+                <h2>Outdoor Hobbies</h2>
+                <ol>
+                    <li>Rock Climbing</li>
+                    <li>Hiking</li>
+                    <li>Backpacking</li>
+                </ol>
+                <div class="polaroid-container">
+                    <div class="polaroid">
+                        <h3>Hiking</h3>
+                        <a href="https://en.wikipedia.org/wiki/Hiking" target="_blank">
+                            <img src="hiking.jpeg" alt="Hiking">
+                        </a>
+                    </div>
 
-    <nav>
-        <a href="index.html">Introduction</a> |
-        <a href="career.html">Career Summary</a> |
-        <a href="education.html">Education and Qualifications</a> |
-        <a href="hobbies.html">Interests and Hobbies</a>
-    </nav>
+                    <div class="polaroid">
+                        <h3>Backpacking</h3>
+                        <a href="https://en.wikipedia.org/wiki/Backpacking" target="_blank">
+                            <img src="backpacking.jpeg" alt="Backpacking">
+                        </a>
+                    </div>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="profile.jpg" alt="Profile Image" width="200">
-        <p>Hi, I'm Maya Stelzer, a senior at Gonzaga University studying Computer Science. I'm a passionate software engineer interested in building software that solves real-world problems, especially projects related to the outdoors and the environment. With a strong foundation in Java, C#, Python, C++, and SQL, I enjoy making practical, impactful, creative solutions that blend technology with the natural world.</p>
-        <p>Learn more about my <a href="education.html#qualifications">qualifications</a> in the Education and Qualifications section.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Core Skills</h2>
-        <ul>
-            <li>Data Structures and Algorithms</li>
-            <li>Software Development</li>
-            <li>Database Management</li>
-            <li>Java</li>
-            <li>C#</li>
-            <li>Python</li>
-            <li>C++</li>
-            <li>SQL</li>
-        </ul>
-    </section>
+                    <div class="polaroid">
+                        <h3>Rock Climbing</h3>
+                        <a href="https://en.wikipedia.org/wiki/Rock_climbing" target="_blank">
+                            <img src="climbing.jpeg" alt="Rock Climbing">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>    
 </body>
 </html>
